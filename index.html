@@ -38,13 +38,40 @@
 
     <section>
         <div class="container">
-            <h1 style="padding: 50px 0px 20px 0px;">Bio</h1>
-            <p>
-                Hello, my name is Jonathan Ouellet. I am technical animator currently working at Gearbox Software Quebec.  
-            </p>
+            <h1 style="padding: 50px 40px 30px 20px;">Bio</h1>
+            <div class="row">
+                <div class="col-lg-10">
+                    <p>
+                    Hello, my name is Jonathan Ouellet. I am technical animator currently working at Gearbox Software Quebec. I have been
+                    working in the game industry since 2013.  I started working at Ubisoft Quebec where I contributed on games like <em>Assassin's Creed Freedom Cry</em> and 
+                    <em>Assassin's Creed Syndicate</em>.  I like writing tools to increase production speed and facilitate workflows.
+                    </p>
+                    <p>
+                        I know Maya and Motion Builder well.  I can easily write C++ and python tools for those.  I am comfortable with using <em>C++</em>, <em>Python</em>, 
+                        <em>JavaScript</em> and <em>TypeScript</em>. I know a little bit of mel but I prefer using python by far.  I also recently learned how to use <em>ZScript</em> to build tools
+                        for ZBrush.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <img src="img/profile.jpg" alt="Profile picture" class="rounded-circle img-thumbnail" style="max-width: 150px">
+                </div>
+            </div>      
             <p>
                 This site is a repository of my personal works.
             </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <ul>
+                {% for post in site.posts %}
+                    <li>
+                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                        <p>{{ post.excerpt }}</p>
+                    </li>
+                {% endfor %}
+            </ul>            
         </div>
     </section>
 
