@@ -1,0 +1,4 @@
+title: Jonathan Ouellet
+name: Jonathan Ouellet
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
