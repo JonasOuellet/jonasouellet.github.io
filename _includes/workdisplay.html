@@ -1,0 +1,36 @@
+
+
+{% for work in site.data[include.work] %}
+    {% assign mod = forloop.index0 | modulo:3 %}
+    {% if mod == 0 %}
+        <div class="row">
+    {% endif %}
+
+    <div class="col-lg-4 showcase-col">
+        <div class="content">
+            <a href="{{ work.site }}"><img src="{{ work.image }}"></a>
+        
+            <span class='title'>{{ work.name }}</span>
+            {% if work.subtitle %}
+                <small> - {{ work.subtitle }}</small>
+            {% endif %}
+            <p>{{ work.description }}</p>
+
+            {% if work.github or work.site %}
+            <div class="link">
+                {% if work.github %}
+                    <a href="{{ work.github }}"><i class="fab fa-github"></i></a>
+                {% endif %}
+                {% if work.site %}
+                    <a href="{{ work.site }}"><i class="fas fa-globe-americas"></i></a>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if mod == 2 %}
+        </div>
+    {% endif %}
+
+{% endfor %}

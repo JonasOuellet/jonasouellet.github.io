@@ -3,7 +3,7 @@ layout: default
 title: jouellet | home
 ---
 
-<h1 style="padding: 50px 40px 30px 20px;">Bio</h1>
+<h1 class="header-title">Bio</h1>
 <div class="row">
     <div class="col-lg-10">
         <p>
@@ -25,7 +25,8 @@ title: jouellet | home
     This site is a repository of my personal works.
 </p>
 
-<a href="/blog"><h1 style="padding: 50px 40px 30px 20px;">Blog</h1></a> 
+<div class="v-spacing-top"></div>
+<h1 class="header-title">Latest Posts<small style="font-size: 20px; font-style: italic"> - <a href="/blog">All posts</a></small></h1>
 
 {% for post in site.posts limit:3 %}
     <span class="blog">

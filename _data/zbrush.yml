@@ -1,0 +1,20 @@
+- name: ZScript
+  subtitle: vscode extension
+  description: >
+    A ZScript extension for visual studio code.
+    It increase zbrush tool development with 
+    feature like auto complete, command signature,
+    snippets and much more.
+  github: https://github.com/JonasOuellet/vscode-zscript
+  site: https://marketplace.visualstudio.com/items?itemName=ouelletjonathan.zscript
+  image: /zbrush/img/zscript-vscode.png
+
+- name: ZLayerManager
+  subtitle: 
+  description: >
+    A standalone UI to handle zbrush subtool with multiple layers.
+    It can activate multiple layers at the same time, change intensity,
+    set a layer to record and export wanted layer directly to maya.
+  github: https://github.com/JonasOuellet/zLayerManager
+  site: https://jonasouellet.github.io/zLayerManager
+  image: /zbrush/img/zlayermanager.png

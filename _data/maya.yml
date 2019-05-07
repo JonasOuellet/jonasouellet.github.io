@@ -1,0 +1,9 @@
+- name: Arikara
+  subtitle: Skin Editor
+  description: >
+    Maya skinning tool inspired from 3ds Max skinning tool set.  It can assign weight 
+    using soft selection, save/load skin weight, quickly mirror and transfer weight.  The perfect <em>all
+    in one</em> to skin in Maya !
+  github: https://github.com/JonasOuellet/Arikara
+  site: 
+  image: /maya/img/arikaraSkin.png

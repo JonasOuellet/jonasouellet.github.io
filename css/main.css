@@ -1,3 +1,25 @@
+footer {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    padding-top: 5px;
+}
+
+footer a {
+    float: right;
+}
+
+@media only screen 
+and (min-width : 200px)
+and (max-width : 405px) {
+
+   footer {
+    height: 80px;
+   }
+
+}
+
 footer a {
     color: rgb(200, 200, 200);
     padding: 0 5px;
@@ -31,4 +53,52 @@ footer a:visited {
     font-size: 15px;
     font-weight: 600;
     color: rgb(99, 99, 99);
+}
+
+.v-spacing-top {
+    padding-top: 50px;
+}
+
+.header-title {
+    padding: 0px 40px 30px 20px;
+}
+
+.showcase-col {
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.showcase-col .content {
+    /*background: rgb(224, 224, 224);*/
+    background-image: linear-gradient(rgb(224, 224, 224), white);
+    height: 100%;
+    width: 100%;
+}
+
+.showcase-col img {
+    width: 100%;
+}
+
+.showcase-col .title {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(35, 43, 54);
+    padding: 10px 0 5px 15px;
+}
+
+.showcase-col small {
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(61, 61, 61);
+}
+
+.showcase-col p {
+    padding: 0 5px;
+}
+
+.link {
+    text-align: center;
+}
+.link a {
+    padding: 0 10px; 
 }
