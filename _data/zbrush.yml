@@ -15,6 +15,6 @@
     A standalone UI to handle zbrush subtool with multiple layers.
     It can activate multiple layers at the same time, change intensity,
     set a layer to record and export wanted layer directly to maya.
-  github: https://github.com/JonasOuellet/zLayerManager
-  site: https://jonasouellet.github.io/zLayerManager
+  github: https://github.com/JonasOuellet/zlayermanager
+  site: https://jonasouellet.github.io/zlayermanager
   image: /zbrush/img/zlayermanager.png
