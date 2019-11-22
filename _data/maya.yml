@@ -7,3 +7,11 @@
   github: https://github.com/JonasOuellet/Arikara
   site: 
   image: /maya/img/arikaraSkin.png
+
+- name: PyDef
+  subtitle: Advance cmds definition
+  description: >
+   Provide advance maya.cmds function definition. Provide documentation, kwargs autocomplete, kwargs typing etc.
+  github: https://github.com/JonasOuellet/maya-py-definition
+  site: 
+  image: /maya/img/cmdsDef.png

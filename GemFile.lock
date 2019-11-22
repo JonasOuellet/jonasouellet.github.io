@@ -245,8 +245,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  nokogiri (>= 1.10.4)
-  rubyzip (>= 1.3.0)
   wdm (>= 0.1.0)
 
 BUNDLED WITH
