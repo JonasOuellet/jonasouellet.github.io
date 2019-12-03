@@ -13,12 +13,12 @@ from PyQt5 import QtWidgets, QtCore
 # create a widget to save the state
 my_window = QtWidgets.QMainWindow()
 
-qt_byte = my_window.saveState()
+qbyte_array = my_window.saveState()
 
 codec = QtCore.QTextCodec.codecForName("UTF-16")
-unicode_byte = codec.toUnicode(qt_byte)
+unicode_str = codec.toUnicode(qbyte_array)
 
-to_write = json.dumps({'widget_sate': unicode_byte}, indent=4)
+to_write = json.dumps({'widget_sate': unicode_str}, indent=4)
 
 ```
 
@@ -27,7 +27,7 @@ to_write = json.dumps({'widget_sate': unicode_byte}, indent=4)
 ```python
 
 text_encoder = codec.makeEncoder(QtCore.QTextCodec.IgnoreHeader)
-qt_byte = text_encoder.fromUnicode(unicode_byte)
-my_window.restoreState(qt_byte)
+qbyte_array = text_encoder.fromUnicode(unicode_str)
+my_window.restoreState(qbyte_array)
 
 ```
