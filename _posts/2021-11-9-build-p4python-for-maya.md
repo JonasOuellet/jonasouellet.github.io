@@ -1,5 +1,3 @@
-# Build P4Python for Autodesk Maya
-
 Autodesk Maya 2020 and lower uses a python27 version compiled with Visual Studio 2015 (v140 build tools).  This restrains the utilisation of p4python version installed directly with pip. To use p4python in Maya, it needs to be compiled using the same build tools.
 
 You can download the already compiled version [here](https://1drv.ms/u/s!AmUIPYb_04PSge0RmEy9TFH1CdNHwA?e=OFFFbe)
