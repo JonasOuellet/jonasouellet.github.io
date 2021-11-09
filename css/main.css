@@ -6,6 +6,11 @@ footer {
     padding-top: 5px;
 }
 
+.clear { 
+    clear: both; 
+    height: 60px; 
+}
+
 footer a {
     float: right;
 }
@@ -17,7 +22,10 @@ and (max-width : 405px) {
    footer {
     height: 80px;
    }
-
+    
+   .clear { 
+    height: 80px; 
+   }
 }
 
 footer a {
