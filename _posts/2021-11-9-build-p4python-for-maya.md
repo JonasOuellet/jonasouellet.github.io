@@ -1,10 +1,10 @@
-Autodesk Maya 2020 and lower uses a python27 version compiled with Visual Studio 2015 (v140 build tools).  This restrains the utilisation of p4python version installed directly with pip. To use p4python in Maya, it needs to be compiled using the same build tools.
+Autodesk Maya 2020 and lower uses a version of python 2.7 compiled with Visual Studio 2015 (v140 build tools).  This means we can't use p4python version installed directly with pip because it is compiled with a different version of visual studio.  To use p4python in Maya, it needs to be compiled from scratch using the same build tools as the python version in Maya.
 
 You can download the already compiled version [here](https://1drv.ms/u/s!AmUIPYb_04PSge0RmEy9TFH1CdNHwA?e=OFFFbe)
 
 ## OpenSSL
 
-The last version of p4python must be compiled with Openssl. To do so, we also need to compile it with visual studio 2015. 
+The last version of p4python must be compiled with OpenSSL. To do so, we also need to compile OpenSSL using visual studio 2015 build tools. 
 
 ## Prerequisites
 
