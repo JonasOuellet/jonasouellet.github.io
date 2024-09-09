@@ -22,7 +22,7 @@ This is a guide to use rust for arduino development on wsl.  Through this guide 
     b. `Ctrl+,` to open settings
     c. Clik on open json file at the bottom left corner. (This will open the json settings file in the default text editor)
     d. You can create a new or update the existing ubuntu profile
-        ```json
+        ```javascript
             "profiles":
             {
                 "list": [
@@ -87,10 +87,11 @@ Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 ```
 
 If this is the only usb device shared with wsl we can suppose that the file name will be `/dev/ttyACM0`.   But if you want to be sure you can use this command `dmesg -H > test.txt`.  This will output to the `test.txt` file.  Open this file and search for arduino.
+
 ```bash
 [  +0.000002] usb 1-1: Manufacturer: Arduino (www.arduino.cc)
 [  +0.000002] usb 1-1: SerialNumber: 75130303036351106150
-[  +0.024063] cdc_acm 1-1:1.0: ttyACM0: USB ACM device < -- ttyACM0
+[  +0.024063] cdc_acm 1-1:1.0: ttyACM0: USB ACM device <-- ttyACM0
 ```
 
 You could also use this method:
@@ -100,9 +101,8 @@ You could also use this method:
 4. attach the device to wsl (see command above in the wsl section.)
 5. list the tty files to a new tmp file `ls \dev\tty* > test2.txt`
 6. compare both files:
-```bash
-❯ comm -1 -3 test.txt test2.txt
-/dev/ttyACM0
-
-```
+    ```bash
+    ❯ comm -1 -3 test.txt test2.txt
+    /dev/ttyACM0
+    ```
 
