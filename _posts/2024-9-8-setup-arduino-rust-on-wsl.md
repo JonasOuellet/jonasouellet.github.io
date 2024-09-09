@@ -14,14 +14,14 @@ This is a guide to use rust for arduino development on wsl.  Through this guide 
 
 1. Install wsl ubuntu.  `wsl --install` this command this will install a default ubuntu distro.  If you want to install a different distro refer to this [page](https://learn.microsoft.com/en-us/windows/wsl/install) 
 2. We also need to change the font of the terminal to be able to use neo vim properly.
-    a. Download any [nerdfont](https://www.nerdfonts.com) as required by neovim.
-    b. Select all the files
-    c. Right click and choose install.
+    1. Download any [nerdfont](https://www.nerdfonts.com) as required by neovim.
+    2. Select all the files
+    3. Right click and choose install.
 3. Setup window terminal to use this new font.
-    a. Open a windows terminal
-    b. `Ctrl+,` to open settings
-    c. Clik on open json file at the bottom left corner. (This will open the json settings file in the default text editor)
-    d. You can create a new or update the existing ubuntu profile
+    1. Open a windows terminal
+    2. `Ctrl+,` to open settings
+    3. Clik on open json file at the bottom left corner. (This will open the json settings file in the default text editor)
+    4. You can create a new or update the existing ubuntu profile
         ```javascript
             "profiles":
             {
@@ -41,13 +41,13 @@ This is a guide to use rust for arduino development on wsl.  Through this guide 
                 ]
             }
         ```
-    e. restart the terminal and notice the new font.
+    5. restart the terminal and notice the new font.
 4. Install [usbipd-win](https://learn.microsoft.com/en-us/windows/wsl/connect-usb).
-    a. Connect the arduino to the pc.
-    b. list the usb device with `usbipd list`
-    c. share arduino bus with wsl `usbipd bind --busid <busid>`  **You only need to share it once**
-    d. Open wsl and run this command to attach it `usbipd attach --wsl --busid <busid>`
-    e. you should now see the arduino if you list the usb device in wsl with `lsusb`
+    1. Connect the arduino to the pc.
+    2. list the usb device with `usbipd list`
+    3. share arduino bus with wsl `usbipd bind --busid <busid>`  **You only need to share it once**
+    4. Open wsl and run this command to attach it `usbipd attach --wsl --busid <busid>`
+    5. you should now see the arduino if you list the usb device in wsl with `lsusb`
 
 You can also create a shortcut to be able to launch a new windows terminal directly with the **Ubuntu** profile. To do that simply navigate to `C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`, right click, new and shortcut. Use `wt.exe` as target and add `-p Ubuntu` to start the ubuntu wsl profile.  So the resulting shortcut target should be `wt.exe -p Ubuntu`.  Note that you might need to use the full path to `wt.exe`.  To get the full path you can simply run `where wt` in a windows terminal.
 
