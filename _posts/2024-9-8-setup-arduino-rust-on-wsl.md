@@ -1,16 +1,12 @@
-This is a guide to use rust for arduino development on wsl.  Through this guide we will setup windows wsl (Windows subsystem for linux) for rust development and more specificly for arduino.  Evertyhing will be setup and available in the wsl terminal.
+This is a guide to use rust for arduino development on wsl (Windows subsystem for linux).  Everyhing will be setup and available in the wsl terminal.  Through this guide we will install the following components:
 
-* zsh
-* neovim
-* rust with lsp
-
-
-# Useful links
-
-* [Rust Before Main](https://youtu.be/q8irLfXwaFM):  Information about rust binary. 
+* [WSL](#wsl)
+* [Zsh](#zsh)
+* [neovim](#neovim)
+* [Arduino tools](#Arduino-tools)
 
 
-# WSL
+## WSL
 
 1. Install wsl ubuntu.  `wsl --install` this command this will install a default ubuntu distro.  If you want to install a different distro refer to this [page](https://learn.microsoft.com/en-us/windows/wsl/install) 
 2. We also need to change the font of the terminal to be able to use neo vim properly.
@@ -51,29 +47,29 @@ This is a guide to use rust for arduino development on wsl.  Through this guide 
 
 You can also create a shortcut to be able to launch a new windows terminal directly with the **Ubuntu** profile. To do that simply navigate to `C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`, right click, new and shortcut. Use `wt.exe` as target and add `-p Ubuntu` to start the ubuntu wsl profile.  So the resulting shortcut target should be `wt.exe -p Ubuntu`.  Note that you might need to use the full path to `wt.exe`.  To get the full path you can simply run `where wt` in a windows terminal.
 
-# Install zsh
+## Zsh
 
 Follow this [page](https://dev.to/equiman/zsh-on-windows-with-wsl-1jck) to install zsh in wsl.  
 
 **Note:** You don't need to install the font since we already installed nerdfonts in the previous step.
 
 
-# Setup Rust
+## NeoVim 
 
 Let's get Rusty youtube channel as a nice [video](https://youtu.be/E2mKJ73M9pg) on how to setup linux for rust development.  Follow there step in the wsl terminal.
 
 
 1. Install nvim
 2. Install nvcahd. **Make sure to install nerdfonts in the windows terminal** to do that see WSl setup above.
-3. Install rust anylizer
+3. Install rust analyzer
 4. Install rustaceanvim
 
 
-# Setup Arduino tools
+## Arduino tools
 
 Look at this [page](https://blog.logrocket.com/complete-guide-running-rust-arduino/) to setup rust for arduino.  This will install all the necessary dependencies and init a new project with `cargo generate`.
 
-## USB
+### USB
 
 To make sure what `/dev/tty**` file to use for ravendude you can follow these steps.
 
