@@ -1,9 +1,9 @@
-This is a guide to use rust for arduino development on wsl (Windows subsystem for linux).  Everyhing will be setup and available in the wsl terminal.  Through this guide we will install the following components:
+This is a guide to use rust for arduino development on wsl (Windows subsystem for linux).  Everything will be setup and available in the wsl terminal.  Through this guide we will install the following components:
 
 * [WSL](#wsl)
 * [Zsh](#zsh)
-* [neovim](#neovim)
-* [Arduino tools](#Arduino-tools)
+* [Neovim](#neovim)
+* [Arduino tools](#arduino-tools)
 
 
 ## WSL
@@ -82,7 +82,7 @@ Bus 001 Device 002: ID 2341:0043 Arduino SA Uno R3 (CDC ACM)  <-- arduino device
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 ```
 
-If this is the only usb device shared with wsl we can suppose that the file name will be `/dev/ttyACM0`.   But if you want to be sure you can use this command `dmesg -H > test.txt`.  This will output to the `test.txt` file.  Open this file and search for arduino.
+If this is the only usb device shared with wsl we can suppose that the file name will be `/dev/ttyACM0`.  But if you want to be sure you can use this command `dmesg -H > test.txt`.  This will output to the `test.txt` file.  Open this file and search for arduino.
 
 ```bash
 [  +0.000002] usb 1-1: Manufacturer: Arduino (www.arduino.cc)
