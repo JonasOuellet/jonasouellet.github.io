@@ -7,7 +7,7 @@
     snippets and much more.
   github: https://github.com/JonasOuellet/vscode-zscript
   site: https://marketplace.visualstudio.com/items?itemName=ouelletjonathan.zscript
-  image: /zbrush/img/zscript-vscode.png
+  image: /img/zscript-vscode.png
 
 - name: ZLayerManager
   subtitle: 
@@ -17,4 +17,23 @@
     set a layer to record and export wanted layer directly to maya.
   github: https://github.com/JonasOuellet/zlayermanager
   site: https://jonasouellet.github.io/zlayermanager
-  image: /zbrush/img/zlayermanager.png
+  image: /img/zlayermanager.png
+
+- name: Arikara
+  subtitle: Skin Editor
+  description: >
+    Maya skinning tool inspired from 3ds Max skinning tool set.  It can assign weight 
+    using soft selection, save/load skin weight, quickly mirror and transfer weight.  The perfect <em>all
+    in one</em> to skin in Maya !
+  github: https://github.com/JonasOuellet/Arikara
+  site: 
+  image: /img/arikaraSkin.png
+
+- name: PyDef
+  subtitle: Advance cmds definition
+  description: >
+   Provide advance maya.cmds function definition. Provide documentation, kwargs autocomplete, kwargs typing etc.
+  github: https://github.com/JonasOuellet/maya-py-definition
+  site: 
+  image: /img/cmdsDef.png
+
