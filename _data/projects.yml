@@ -20,7 +20,7 @@
   image: /img/zlayermanager.png
 
 - name: Arikara
-  subtitle: Skin Editor
+  subtitle: Maya Skin Editor
   description: >
     Maya skinning tool inspired from 3ds Max skinning tool set.  It can assign weight 
     using soft selection, save/load skin weight, quickly mirror and transfer weight.  The perfect <em>all
@@ -29,10 +29,10 @@
   site: 
   image: /img/arikaraSkin.png
 
-- name: PyDef
-  subtitle: Advance cmds definition
+- name: maya.cmds
+  subtitle: 
   description: >
-   Provide advance maya.cmds function definition. Provide documentation, kwargs autocomplete, kwargs typing etc.
+   Provide advance maya.cmds function definition, documentation, kwargs autocomplete, kwargs typing etc.
   github: https://github.com/JonasOuellet/maya-py-definition
   site: 
   image: /img/cmdsDef.png

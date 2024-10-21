@@ -73,11 +73,10 @@ footer a:visited {
 
 .showcase-col {
     padding: 0px 25px 50px 25px;
-    border-radius: 25px;
 }
 
 .showcase-col .content {
-    /*background: rgb(224, 224, 224);*/
+    border-radius: 12px;
     background-image: linear-gradient(rgb(224, 224, 224), white);
     height: 100%;
     width: 100%;
@@ -85,6 +84,8 @@ footer a:visited {
 
 .showcase-col img {
     width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .showcase-col .title {

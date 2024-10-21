@@ -38,7 +38,11 @@ title: jouellet | home
     
             <div class="col-lg-4 showcase-col">
                 <div class="content">
-                    <a href="{{ work.site }}"><img src="{{ work.image }}"></a>
+                    {% if work.site %}
+                        <a href="{{ work.site }}"><img src="{{ work.image }}"></a>
+                    {% else %}
+                        <img src="{{ work.image }}">
+                    {% endif %}
                 
                     <span class='title'>{{ work.name }}</span>
                     {% if work.subtitle %}
