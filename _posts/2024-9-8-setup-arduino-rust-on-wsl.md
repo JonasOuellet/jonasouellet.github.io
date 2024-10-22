@@ -80,7 +80,7 @@ Look at this [page](https://blog.logrocket.com/complete-guide-running-rust-ardui
 
 To make sure what `/dev/tty**` file to use for ravendude you can follow these steps.
 
-First, make sure that you have installed **usbipd-win** and that the bus is shared with wsl in visble in wsl with `lsusb`.  To determine what `/dev/tty***` unbeffured file to use you can do 
+First, make sure that you have installed **usbipd-win** and that the bus is shared and visible in wsl with `lsusb`.  To determine what `/dev/tty***` unbeffured file to use you can do 
 
 ```bash
 ❯ lsusb
