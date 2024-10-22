@@ -1,3 +1,17 @@
+---
+toctree:
+    - link: file
+      name: file
+    - link: hd
+      name: hd
+    - link: objdump
+      name: objdump
+    - link: ldd
+      name: ldd
+    - link: readelf
+      name: readelf
+---
+
 This is a list of useful commands that can be used while developing for arduino with rust or c++.  Most of the command come from this [video](https://youtu.be/q8irLfXwaFM).
 
 To demonstrate how the commands work, I have compiled the **hello world** of embeded programming (onboard led blinking) obtained with the `cargo generate --git https://github.com/Rahix/avr-hal-template.git` command.

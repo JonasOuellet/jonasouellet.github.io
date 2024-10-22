@@ -1,86 +1,83 @@
 ---
 layout: default
-title: jouellet | home
+title: Jonathan Ouellet
+
+toctree:
+    - link: aboutme
+      name: About Me
+    - link: projects
+      name: Projects
+    - link: posts
+      name: Posts
+
 ---
 
-<h1 class="header-title">Bio</h1>
 <div class="row">
     <div class="col-lg-10">
+        <h1 class="header-title" id="aboutme">About Me</h1>
         <p>
-        Hello, my name is Jonathan Ouellet. I am technical animator currently working at Gearbox Software Quebec. I have been
-        working in the game industry since 2013.  I started working at Ubisoft Quebec where I contributed on games like <em>Assassin's Creed Freedom Cry</em> and 
-        <em>Assassin's Creed Syndicate</em>.  I like writing tools to increase production speed and facilitate workflows.
-        </p>
-        <p>
-            I know Maya and Motion Builder well.  I can easily write <em>C++</em> and <em>python</em> tools for those.  I am comfortable with using <em>C++</em>, <em>Python</em>, 
-            <em>JavaScript</em> and <em>TypeScript</em>. I know a little bit of mel but I prefer using python by far.  I also recently learned how to use <em>ZScript</em> to build tools
-            for ZBrush.
+            Hello, my name is Jonathan Ouellet. I am technical animator currently working at Gearbox Software Quebec. I
+            have been working in the game industry since 2013. I like writing tools to increase production speed and facilitate
+            workflows.  I am comfortable using <em>C++</em>, <em>Python</em>, <em>JavaScript</em> and <em>TypeScript</em>. I can
+            write tools and plug-ins for maya, ZBrush and Motion Builder.
         </p>
     </div>
     <div class="col-lg-2">
         <img src="img/profile.jpg" alt="Profile picture" class="rounded-circle img-thumbnail" style="max-width: 150px">
     </div>
-</div>      
-<p>
-    This site is a repository of my personal works.
-</p>
+</div>
 
-<div class="v-spacing-top">
-    <h1 class="header-title">Personal Projects</h1>
+<h1 class="header-title" style="margin-top: 20px; margin-bottom: 20px;" id="projects">Projects</h1>
 
-    <div class="container">
-        
-        {% for work in site.data.projects %}
-            {% assign mod = forloop.index0 | modulo:6 %}
-            {% if mod == 0 %}
-                <div class="row">
+{% for work in site.data.projects %}
+{% assign mod = forloop.index0 | modulo:6 %}
+{% if mod == 0 %}
+<div class="row">
+    {% endif %}
+
+    <div class="col-lg-4 showcase-col">
+        <div class="content">
+            {% if work.site %}
+            <a href="{{ work.site }}"><img src="{{ work.image }}"></a>
+            {% else %}
+            <img src="{{ work.image }}">
             {% endif %}
-    
-            <div class="col-lg-4 showcase-col">
-                <div class="content">
-                    {% if work.site %}
-                        <a href="{{ work.site }}"><img src="{{ work.image }}"></a>
-                    {% else %}
-                        <img src="{{ work.image }}">
-                    {% endif %}
-                
-                    <span class='title'>{{ work.name }}</span>
-                    {% if work.subtitle %}
-                        <small> - {{ work.subtitle }}</small>
-                    {% endif %}
-                    <p>{{ work.description }}</p>
-        
-                    {% if work.github or work.site %}
-                    <div class="link">
-                        {% if work.github %}
-                            <a href="{{ work.github }}"><i class="fab fa-github"></i></a>
-                        {% endif %}
-                        {% if work.site %}
-                            <a href="{{ work.site }}"><i class="fas fa-globe-americas"></i></a>
-                        {% endif %}
-                    </div>
-                    {% endif %}
-                </div>
+
+            <span class='title'>{{ work.name }}</span>
+            {% if work.subtitle %}
+            <small> - {{ work.subtitle }}</small>
+            {% endif %}
+            <p>{{ work.description }}</p>
+
+            {% if work.github or work.site %}
+            <div class="link">
+                {% if work.github %}
+                <a href="{{ work.github }}"><i class="fab fa-github"></i></a>
+                {% endif %}
+                {% if work.site %}
+                <a href="{{ work.site }}"><i class="fas fa-globe-americas"></i></a>
+                {% endif %}
             </div>
-        
-            {% if mod == 6 %}
-                </div>
             {% endif %}
-    
-        {% endfor %}
+        </div>
     </div>
 
+    {% if mod == 6 %}
+</div>
+{% endif %}
+
+{% endfor %}
 </div>
 
 
 <div>
-    <h1 class="header-title">Latest Posts<small style="font-size: 20px; font-style: italic"> - <a href="/blog">All posts</a></small></h1>
-    
-    {% for post in site.posts limit:3 %}
-        <span class="blog">
-            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            <small>- {{ post.date | date_to_string }}</small>
-            <p></p>
-        </span> 
+    <h1 class="header-title" id="posts">Posts</h1>
+
+    {% for post in site.posts %}
+    <span class="blog">
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        <small>- {{ post.date | date_to_string }}</small>
+        <p></p>
+    </span>
     {% endfor %}
 </div>

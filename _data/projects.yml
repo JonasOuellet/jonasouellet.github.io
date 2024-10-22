@@ -19,6 +19,17 @@
   site: https://jonasouellet.github.io/zlayermanager
   image: /img/zlayermanager.png
 
+
+- name: Pin Gallery
+  subtitle: Collector App
+  description: >
+    Website to visualize a collector pins.
+    Helps him find duplicates within his collection with similar image search.
+    Built using google cloud services (Vertex AI, Firestore, etc).
+  github: https://github.com/JonasOuellet/pin-gallery
+  site:
+  image: /img/pinGallery.png
+
 - name: Arikara
   subtitle: Maya Skin Editor
   description: >

@@ -15,9 +15,16 @@ footer a {
     float: right;
 }
 
+.main-container {
+    padding-top: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+}
+
 @media only screen 
 and (min-width : 200px)
-and (max-width : 405px) {
+and (max-width : 552px) {
 
    footer {
     height: 80px;
@@ -26,6 +33,24 @@ and (max-width : 405px) {
    .clear { 
     height: 80px; 
    }
+
+}
+
+
+@media only screen 
+and (min-width : 200px)
+and (max-width : 700px) {
+
+   .main-container {
+        margin-right: 5%;
+    }
+
+    .toctree {
+        position: fixed;
+        left: 0px;
+        top: 90px;
+        margin-right: 0px;
+    }
 }
 
 footer a {
@@ -68,7 +93,7 @@ footer a:visited {
 }
 
 .header-title {
-    padding: 0px 40px 30px 20px;
+    margin: 0px 40px 10px 20px;
 }
 
 .showcase-col {
@@ -110,4 +135,43 @@ footer a:visited {
 }
 .link a {
     padding: 0 10px; 
+}
+
+.toctree {
+    position: fixed;
+    right: 80%;
+    top: 90px;
+    margin-right: 20px;
+}
+
+.toctree a {
+    text-decoration: none;
+    color: gray;
+    width: 100%;
+    display: block;
+    text-wrap: nowrap;
+}
+
+.toctree a:hover:not(.toctree-title ){
+    border-right: solid;
+    border-color: lightgray;
+    border-width: 2px;
+}
+
+.tocactive {
+    border-right: solid;
+    border-color: lightgray;
+    border-width: 2px;
+}
+
+.toctree-title {
+    border-bottom: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    padding-right: 10px;
+}
+    
+.toctree-list {
+    list-style-type: none;
+    padding-left: 6px;
 }

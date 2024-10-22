@@ -1,10 +1,17 @@
+---
+toctree:
+    - link: wsl 
+      name: WSL
+    - link: zsh
+      name: Zsh
+    - link: neovim
+      name: Neovim
+    - link: arduino-tools
+      name: Arduino tools
+    - link: usb
+      name: USB
+---
 This is a guide to use rust for arduino development on wsl (Windows subsystem for linux).  Everything will be setup and available in the wsl terminal.  Through this guide we will install the following components:
-
-* [WSL](#wsl)
-* [Zsh](#zsh)
-* [Neovim](#neovim)
-* [Arduino tools](#arduino-tools)
-
 
 ## WSL
 
@@ -54,7 +61,7 @@ Follow this [page](https://dev.to/equiman/zsh-on-windows-with-wsl-1jck) to insta
 **Note:** You don't need to install the font since we already installed nerdfonts in the previous step.
 
 
-## NeoVim 
+## Neovim 
 
 Let's get Rusty youtube channel as a nice [video](https://youtu.be/E2mKJ73M9pg) on how to setup linux for rust development.  Follow there step in the wsl terminal.
 
